@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scratch Page</title>
+  <link rel="stylesheet" href="css/mystyles.css" />
+</head>
+
+<body>
+
+  <!-- Top navigation links -->
+  <div class="top-links">
+    <a href="index.html">Professional Page</a> |
+    <a href="game.html">Game Page</a>
+  </div>
+
+  <h2>My Top 3 Favorite Cars</h2>
+
+  <!-- Ordered list with embedded unordered lists -->
+  <ol>
+    <li>
+      1967 Chevrolet Camaro
+      <ul>
+        <li>Engine Type: 427 cu in V8 (COPO)</li>
+        <li>Engine Size: 7.0L</li>
+        <li>Horsepower: ~430 hp</li>
+        <li>Original Cost: ~$4,500</li>
+        <li>Estimated Value Today: ~$120,000+</li>
+      </ul>
+    </li>
+
+    <li>
+      1967 Ford Mustang Fastback
+      <ul>
+        <li>Engine Type: 428 cu in V8 (Cobra Jet)</li>
+        <li>Engine Size: 7.0L</li>
+        <li>Horsepower: 335 hp (actually closer to ~400 hp)</li>
+        <li>Original Cost: ~$4,200</li>
+        <li>Estimated Value Today: ~$90,000+</li>
+      </ul>
+    </li>
+
+    <li>
+      1969 Chevrolet Corvette Stingray
+      <ul>
+        <li>Engine Type: 427 cu in V8 (L88)</li>
+        <li>Engine Size: 7.0L</li>
+        <li>Horsepower: Officially 430 hp (actual closer to ~560 hp)</li>
+        <li>Original Cost: ~$7,000</li>
+        <li>Estimated Value Today: ~$300,000+</li>
+      </ul>
+    </li>
+  </ol>
+
+  <!-- Car Images -->
+  <div class="car-images">
+    <img src="assets/img/1967-chevrolet-camaro.jpg" alt="1967 Chevrolet Camaro" />
+    <img src="assets/img/1967 Mustang Fastback.jpg" alt="1967 Ford Mustang Fastback" />
+    <img src="assets/img/1967 Chevy Stingray.jpg" alt="1969 Chevrolet Corvette Stingray" />
+  </div>
+
+  <!-- YouTube Video (must use /embed/ URL) -->
+  <div class="video-container">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/_ejEHui9A58"
+      title="Classic cars video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <h5>This is my super awesome Tableau dashboard online!</h5>
+
+  <!-- Tableau embed -->
+  <div class="tableauPlaceholder" id="viz1765505912126" style="position: relative;">
+    <noscript>
+      <a href="#">
+        <img
+          alt="Is Your County Obese?? Select your county to see how it compares with other counties in the country"
+          src="https://public.tableau.com/static/images/CZ/CZZ42TBW8/1_rss.png"
+          style="border: none;"
+        />
+      </a>
+    </noscript>
+
+    <object class="tableauViz" style="display:none;">
+      <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+      <param name="embed_code_version" value="3" />
+      <param name="path" value="shared/CZZ42TBW8" />
+      <param name="toolbar" value="yes" />
+      <param name="static_image" value="https://public.tableau.com/static/images/CZ/CZZ42TBW8/1.png" />
+      <param name="animate_transition" value="yes" />
+      <param name="display_static_image" value="yes" />
+      <param name="display_spinner" value="yes" />
+      <param name="display_overlay" value="yes" />
+      <param name="display_count" value="yes" />
+      <param name="language" value="en-US" />
+    </object>
+  </div>
+
+  <script type="text/javascript">
+    var divElement = document.getElementById("viz1765505912126");
+    var vizElement = divElement.getElementsByTagName("object")[0];
+    vizElement.style.minWidth = "1000px";
+    vizElement.style.maxWidth = "100%";
+    vizElement.style.minHeight = "647px";
+    vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + "px";
+
+    var scriptElement = document.createElement("script");
+    scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+</body>
+</html>
